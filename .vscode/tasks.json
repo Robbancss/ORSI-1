@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Freivalds",
+        "type": "shell",
+        "command": "g++",
+        "args": ["-std=c++11", "-W", "-Wall", "-g", "-o", "Freivalds", "Freivalds.cpp"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
