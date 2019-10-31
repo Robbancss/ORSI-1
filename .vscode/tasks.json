@@ -5,7 +5,7 @@
         "label": "Build Freivalds",
         "type": "shell",
         "command": "g++",
-        "args": ["-std=c++11", "-W", "-Wall", "-g", "-o", "Freivalds", "Freivalds.cpp"],
+        "args": ["-std=c++11", "-Wextra", "-Wall", "-g", "-o", "Freivalds", "Freivalds.cpp"],
         "group": {
           "kind": "build",
           "isDefault": true
