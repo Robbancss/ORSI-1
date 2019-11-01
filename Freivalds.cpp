@@ -12,9 +12,9 @@
 
 void vectorToConsole(std::vector<int> vector) {
     for (auto el : vector) {
-                std::cout << el << ' ';
-            }
-            std::cout << "\n";
+        std::cout << el << ' ';
+    }
+    std::cout << "\n";
 }
 
 int randomNumber(int min, int max) {
@@ -24,7 +24,7 @@ int randomNumber(int min, int max) {
 }
 
 // Multiplies a matrix with a vector, and returns the vector result
-std::vector<int> matrixVectorMultiplier(std::vector<std::vector<int>> matrix, std::vector<int> vector) {
+std::vector<int> matrixVectorMultiplier(std::vector<std::vector<int>> const& matrix, std::vector<int> const& vector) {
     std::vector<int> tempVector;
     for (int i = 0; i < vector.size(); i++)
     {
@@ -41,7 +41,7 @@ std::vector<int> matrixVectorMultiplier(std::vector<std::vector<int>> matrix, st
 }
 
 // Using the Freivalds method check if (a * b = c) is true
-int checkMatrix(std::vector<std::vector<int>> aMatrix, std::vector<std::vector<int>> bMatrix, std::vector<std::vector<int>> cMatrix) {
+int checkMatrix(std::vector<std::vector<int>> const& aMatrix, std::vector<std::vector<int>> const& bMatrix, std::vector<std::vector<int>> const& cMatrix) {
     
     std::vector<int> alpaV; //random {0,1} vector
     for (int i = 0; i < aMatrix.size(); i++) {
