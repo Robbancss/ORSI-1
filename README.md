@@ -1,5 +1,3 @@
-# ORSI-1
-
 # ORSI - 1. beadandó
 
 Class: ORSI - Assigment
